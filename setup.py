@@ -5,10 +5,10 @@ setup(
     version='0.0.1',
     description=('Simple Launchpad client for retrieving project information '
                  'and bugs'),
-    long_description=('A simple read-only (currently) launchpad client'
+    long_description=('A simple read-only (currently) launchpad client '
                       'library to access bugs and projects via the available '
                       'REST api. This project has no affiliation with '
-                      'Launchpad or Canonical.'),
+                      'Launchpad or Canonical Ltd.'),
     url='https://github.com/jmvrbanac/lplight',
     author='John Vrbanac',
     author_email='john.vrbanac@linux.com',
