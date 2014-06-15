@@ -92,3 +92,9 @@ class LaunchpadClient(object):
         resp = self._client.get(uri, model=models.Bug)
 
         return resp
+
+    def get_bug_tasks(self, bug_id):
+        uri = '{base}/bugs/{bug_id}/bug_tasks'.format(base=self.BASE_URI,
+                                                      bug_id=bug_id)
+        resp = self._client.get(uri, model=models.BugTask, is_collection=True)
+        return resp

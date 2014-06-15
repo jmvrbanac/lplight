@@ -53,6 +53,50 @@ class Project(SimpleModel):
 class Bug(SimpleModel):
 
     def __init__(self):
+        self.users_unaffected_collection_link = None
+        self.latest_patch_uploaded = None
+        self.users_affected_count_with_dupes = None
+        self.security_related = None
+        self.private = None
+        self.bug_watches_collection_link = None
+        self.date_made_private = None
+        self.linked_branches_collection_link = None
+        self.subscriptions_collection_link = None
+        self.number_of_duplicates = None
+        self.id = None
+        self.users_unaffected_count = None
+        self.title = None
+        self.other_users_affected_count_with_dupes = None
+        self.name = None
+        self.http_etag = None
+        self.messages_collection_link = None
+        self.self_link = None
+        self.information_type = None
+        self.who_made_private_link = None
+        self.attachments_collection_link = None
+        self.resource_type_link = None
+        self.activity_collection_link = None
+        self.date_last_updated = None
+        self.description = None
+        self.duplicates_collection_link = None
+        self.tags = None
+        self.message_count = None
+        self.heat = None
+        self.bug_tasks_collection_link = None
+        self.duplicate_of_link = None
+        self.users_affected_with_dupes_collection_link = None
+        self.cves_collection_link = None
+        self.web_link = None
+        self.users_affected_count = None
+        self.owner_link = None
+        self.date_created = None
+        self.can_expire = None
+        self.date_last_message = None
+        self.users_affected_collection_link = None
+
+
+class BugTask(SimpleModel):
+    def __init__(self):
         self.date_closed = None
         self.date_assigned = None
         self.title = None
