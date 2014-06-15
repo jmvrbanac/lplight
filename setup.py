@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lplight',
-    version='0.0.2',
+    version='0.0.3',
     description=('Simple Launchpad client for retrieving project information '
                  'and bugs'),
     long_description=('A simple read-only (currently) launchpad client '
