@@ -27,7 +27,8 @@ class RestClient(object):
         resp = requests.get(uri, headers=actual_headers, params=actual_params)
         setattr(resp, 'model', None)
 
-        if model:
+        # Make sure we only attempt to deserialize if we get a valid code.
+        if model and resp.status_code >= 200 and resp.status_code < 300:
             # TODO(jmv): Clean this up
             if is_collection:
                 entries = []
