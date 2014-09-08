@@ -1,1 +1,2 @@
 flake8
+specter>=0.1.15

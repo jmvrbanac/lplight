@@ -23,6 +23,7 @@ setup(
     keywords='launchpad lightweight client',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=['requests', 'six'],
+    test_requires=['specter>=0.1.15'],
     package_data={},
     data_files=[],
     entry_points={
